@@ -4,3 +4,5 @@ h = (h / 100) ** 2
 bmi = int(w/h)
 if bmi >= 25:
     print(f"{bmi}\nObesity")
+if bmi < 25:
+    print(bmi)
