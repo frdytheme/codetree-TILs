@@ -1,7 +1,7 @@
 arr = list(map(int, input().split()))
-val = 0
+stack = []
 for n in arr[1:]:
     if n % 3 == 0:
         break
-    val = n
-print(val)
+    stack.append(n)
+print(stack[-1])
