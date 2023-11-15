@@ -3,7 +3,7 @@ stack = [n]
 cnt = 0
 
 for i in range(1, 10):
-    stack.append(stack[-1] + 4)
+    stack.append(stack[-1] + n)
 
 for num in stack:
     print(num,end=" ")
