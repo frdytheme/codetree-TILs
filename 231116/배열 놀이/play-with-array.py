@@ -13,3 +13,4 @@ for _ in range(q):
     if qu[0] == 3:
         for i in range(qu[1], qu[2] + 1):
             print(nums[i -1],end=" ")
+        print()
