@@ -1,8 +1,10 @@
 a, b = tuple(map(int, input().split()))
 arr = [0] * 10
 while a > 1:
+    arr[a % b] += 1
     a = a // b
-    i = a % b
-    arr[i] += 1
-arr = [i ** 2 for i in arr]
-print(sum(arr))
+val = 0
+for i in arr:
+    n = i ** 2
+    val += n
+print(val)
