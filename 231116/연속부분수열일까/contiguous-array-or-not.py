@@ -13,4 +13,7 @@ for n in A:
     else:
         check = False
         idx = 0
-print(check, idx)
+if check:
+    print("Yes")
+else:
+    print("No")
