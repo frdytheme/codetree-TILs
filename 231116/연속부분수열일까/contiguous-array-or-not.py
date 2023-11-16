@@ -4,7 +4,7 @@ B = list(map(int, input().split()))
 
 # 4 4 1 4
 # 4 3
-
+done = False
 for i in range(n1):
     check = True
     for j in range(n2):
@@ -15,6 +15,9 @@ for i in range(n1):
             check = False
             break
     if check:
-        print("Yes")
+        done = True
         break
-print("No")
+if done:
+    print("Yes")
+else:
+    print("No")
