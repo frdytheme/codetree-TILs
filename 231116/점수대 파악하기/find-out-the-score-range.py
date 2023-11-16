@@ -4,6 +4,8 @@ board = [0] * 10
 for s in arr:
     if s == 0:
         break
+    if s < 10:
+        continue
     n = s // 10
     board[n-1] += 1
 for i in range(10,0,-1):
