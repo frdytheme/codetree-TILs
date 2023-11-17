@@ -7,7 +7,7 @@ arr = [
 
 num = 1
 for col in range(n-1, -1, -1):
-    if col % 2 != 0:
+    if (n - col) % 2 != 0:
         for row in range(n-1, -1, -1):
             arr[row][col] = num
             num += 1
